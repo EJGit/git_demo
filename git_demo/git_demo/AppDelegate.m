@@ -7,8 +7,12 @@
 //
 
 #import "AppDelegate.h"
-
+#import "Triangle.h"
+#import "Square.h"
+#import "AccItem.h"
 @interface AppDelegate ()
+
+
 
 @end
 
@@ -17,8 +21,41 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
+//    Triangle *triangle = [Triangle new];
+//    Square *square = [Square new];
+//    triangle.side = 2.f;
+//    square.side = 2.f;
+//    float result = [square estimateArea];
+//    NSLog(@"%f",result);
+//    result = [triangle estimateArea];
+//    NSLog(@"%f",result);
+
+    //BNR task
+    NSMutableArray *itemContainer = [NSMutableArray new];
+    [self fillItemContainer:itemContainer withItemCount:5];
+    AccItem *item = [[AccItem alloc] initWithName:@"'item name'" ID:@"'item id'" Value:1024];
+    NSLog(@"Nr. : %d   Item Name : %@    Item ID : %@   Item Value : %d", 0, [item itemName],
+          [item itemID], [item getItemValue]);
     return YES;
 }
+
+- (void) fillItemContainer:(NSMutableArray *)container withItemCount:(int)count
+{
+    for (int i=0; i<count; i++) {
+        [container addObject: [[AccItem alloc] init]];
+        [[container objectAtIndex:i] setItemName:[NSString stringWithFormat:@"%c",
+                                                  arc4random_uniform(26) + 'a']];
+        [[container objectAtIndex:i] setItemID:[NSString stringWithFormat:@"%c",
+                                                arc4random_uniform(26) + 'a']];
+
+        [[container objectAtIndex:i] setItemValue:arc4random_uniform(1000)];
+        NSLog(@"Nr. : %d   Item Name : %@    Item ID : %@   Item Value : %d", i+1, [[container objectAtIndex:i] itemName],
+              [[container objectAtIndex:i] itemID], [[container objectAtIndex:i]getItemValue]);
+    }
+    
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

@@ -14,6 +14,9 @@
 		A8099A1F1A5BD97B003E46F6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8099A1E1A5BD97B003E46F6 /* Images.xcassets */; };
 		A8099A221A5BD97B003E46F6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8099A201A5BD97B003E46F6 /* LaunchScreen.xib */; };
 		A8099A2E1A5BD97B003E46F6 /* git_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8099A2D1A5BD97B003E46F6 /* git_demoTests.m */; };
+		A8846DC81A724E47002B16D6 /* AccItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A8846DC71A724E47002B16D6 /* AccItem.m */; };
+		A89DB8911A63C9A300552AD2 /* Triangle.m in Sources */ = {isa = PBXBuildFile; fileRef = A89DB8901A63C9A300552AD2 /* Triangle.m */; };
+		A89DB8941A63C9B600552AD2 /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = A89DB8931A63C9B600552AD2 /* Square.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		A8099A271A5BD97B003E46F6 /* git_demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = git_demoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8099A2C1A5BD97B003E46F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8099A2D1A5BD97B003E46F6 /* git_demoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = git_demoTests.m; sourceTree = "<group>"; };
+		A8846DC61A724E47002B16D6 /* AccItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccItem.h; sourceTree = "<group>"; };
+		A8846DC71A724E47002B16D6 /* AccItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccItem.m; sourceTree = "<group>"; };
+		A89DB88F1A63C9A300552AD2 /* Triangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Triangle.h; sourceTree = "<group>"; };
+		A89DB8901A63C9A300552AD2 /* Triangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Triangle.m; sourceTree = "<group>"; };
+		A89DB8921A63C9B600552AD2 /* Square.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Square.h; sourceTree = "<group>"; };
+		A89DB8931A63C9B600552AD2 /* Square.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Square.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +72,9 @@
 		A8099A051A5BD97A003E46F6 = {
 			isa = PBXGroup;
 			children = (
+				A8846DC61A724E47002B16D6 /* AccItem.h */,
+				A8846DC71A724E47002B16D6 /* AccItem.m */,
+				A8846DC91A724E50002B16D6 /* create protocol here (later) */,
 				A8099A101A5BD97A003E46F6 /* git_demo */,
 				A8099A2A1A5BD97B003E46F6 /* git_demoTests */,
 				A8099A0F1A5BD97A003E46F6 /* Products */,
@@ -117,6 +129,17 @@
 				A8099A2C1A5BD97B003E46F6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A8846DC91A724E50002B16D6 /* create protocol here (later) */ = {
+			isa = PBXGroup;
+			children = (
+				A89DB88F1A63C9A300552AD2 /* Triangle.h */,
+				A89DB8901A63C9A300552AD2 /* Triangle.m */,
+				A89DB8921A63C9B600552AD2 /* Square.h */,
+				A89DB8931A63C9B600552AD2 /* Square.m */,
+			);
+			name = "create protocol here (later)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +242,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8846DC81A724E47002B16D6 /* AccItem.m in Sources */,
 				A8099A1A1A5BD97A003E46F6 /* ViewController.m in Sources */,
 				A8099A171A5BD97A003E46F6 /* AppDelegate.m in Sources */,
 				A8099A141A5BD97A003E46F6 /* main.m in Sources */,
+				A89DB8941A63C9B600552AD2 /* Square.m in Sources */,
+				A89DB8911A63C9A300552AD2 /* Triangle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +440,7 @@
 				A8099A331A5BD97B003E46F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A8099A341A5BD97B003E46F6 /* Build configuration list for PBXNativeTarget "git_demoTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +449,7 @@
 				A8099A361A5BD97B003E46F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
