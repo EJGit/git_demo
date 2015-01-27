@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6DD2C9961A7787BA00149DAD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD2C9951A7787BA00149DAD /* CoreLocation.framework */; };
 		A8099A141A5BD97A003E46F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8099A131A5BD97A003E46F6 /* main.m */; };
 		A8099A171A5BD97A003E46F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8099A161A5BD97A003E46F6 /* AppDelegate.m */; };
 		A8099A1A1A5BD97A003E46F6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8099A191A5BD97A003E46F6 /* ViewController.m */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6DD2C9951A7787BA00149DAD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		A8099A0E1A5BD97A003E46F6 /* git_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = git_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8099A121A5BD97A003E46F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8099A131A5BD97A003E46F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DD2C9961A7787BA00149DAD /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +75,7 @@
 		A8099A051A5BD97A003E46F6 = {
 			isa = PBXGroup;
 			children = (
+				6DD2C9951A7787BA00149DAD /* CoreLocation.framework */,
 				A8846DC61A724E47002B16D6 /* AccItem.h */,
 				A8846DC71A724E47002B16D6 /* AccItem.m */,
 				A8846DC91A724E50002B16D6 /* create protocol here (later) */,

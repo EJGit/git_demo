@@ -10,6 +10,8 @@
 #import "Triangle.h"
 #import "Square.h"
 #import "AccItem.h"
+#import <CoreLocation/CoreLocation.h>
+
 @interface AppDelegate ()
 
 
@@ -31,12 +33,15 @@
 //    result = [triangle estimateArea];
 //    NSLog(@"%f",result);
 
-    //BNR task
+    //BNR silver task (58)
     NSMutableArray *itemContainer = [NSMutableArray new];
     [self fillItemContainer:itemContainer withItemCount:5];
     AccItem *item = [[AccItem alloc] initWithName:@"'item name'" ID:@"'item id'" Value:1024];
     NSLog(@"Nr. : %d   Item Name : %@    Item ID : %@   Item Value : %d", 0, [item itemName],
           [item itemID], [item getItemValue]);
+  
+    
+    
     return YES;
 }
 

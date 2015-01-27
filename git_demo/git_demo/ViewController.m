@@ -17,6 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    //BNR bronze (97)
+    locationManager = [CLLocationManager new];
+    [locationManager setDelegate:self];
+    [locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
+    [locationManager setDistanceFilter:10.0f];
+    [locationManager startUpdatingLocation];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,4 +31,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void) locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    NSLog(@"%@", [locations objectAtIndex:0]);
+}
 @end
